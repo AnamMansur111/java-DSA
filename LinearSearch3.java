@@ -11,7 +11,8 @@ public class LinearSearch3 {
             return -1;
         }
         for (int index = start; index <= end; index++) {
-            if (arr[index] == target) {
+            int element = arr[index];
+            if (element == target) {
                 return index;
             }
         }
