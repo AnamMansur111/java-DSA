@@ -1,7 +1,7 @@
 import java.util.Arrays;
 public class Swap {
     public static void main(String[] args) {
-        int[] arr = { 2, 4, 5, 8, 1 };
+        int[] arr = { 2, 4, 5, 8, 1,9 };
         reverse(arr);
         System.out.println(Arrays.toString(arr));
     }
