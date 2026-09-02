@@ -1,13 +1,16 @@
 public class Ceiling {
     public static void main(String[] args) {
         int[] arr = { 1, 3, 5, 7, 8, 9, 10 };
-        int target = 6;
+        int target = 11;
         int ans = Ceiling(arr, target);
         System.out.println(ans);
 
     }
 
     static int Ceiling(int[] arr, int target) {
+        if (arr[arr.length - 1] < target) {
+            return -1;
+        }
         int start = 0;
         int end = arr.length - 1;
         while (start <= end) {
